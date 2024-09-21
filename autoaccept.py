@@ -39,11 +39,19 @@ def image_exists(image_path):
     return location is not None
 
 def main():
+    text_to_type2 = input("Ban champ: ")
     text_to_type = input("Pick champ: ")
     while True:
-        click_on_image('found.png', (360, 600))
+        click_on_image('found.png', (920,750))
         time.sleep(5)
         if image_exists('search.png'):
+            time.sleep(10)
+            click_on_image('search.png', (1220, 190), text_to_type2)
+            time.sleep(1)
+            click_on_image('search.png', (620, 290))
+            time.sleep(3)
+            click_on_image('pick.png', (920,850))
+            time.sleep(26)
             click_on_image('search.png', (1220, 190), text_to_type)
             time.sleep(1)
             click_on_image('search.png', (620, 290))
