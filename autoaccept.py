@@ -45,7 +45,7 @@ def main():
         click_on_image('found.png', (920,750))
         time.sleep(5)
         if image_exists('search.png'):
-            time.sleep(10)
+            time.sleep(18)
             click_on_image('search.png', (1220, 190), text_to_type2)
             time.sleep(1)
             click_on_image('search.png', (620, 290))
